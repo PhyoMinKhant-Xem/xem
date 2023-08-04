@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Xem</title>
 </head>
-<body>
-    <header id="page-header">
-        <a href="#"><img src="img/xem.png" alt="..."></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-            <ul class="navlist">
-                <li><a href="#home" id="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>    
-    </div>
+<header id="page-header">
+  <a href="#"><img src="img/xem.png" alt="..."></a>
+  <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navlist">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>    
+</div>
 </header>
-<section class="home-container">
+<body>
+    
+<section class="home-container" id="home">
     <div class="home-text">
         <h1>Hello there!</h1>
         <h2>I'm Xem</h2>
@@ -32,6 +33,76 @@
     </div>
         <img src="img/home.png" alt="">
 </section>
+<section class="about-container" id="about">
+    <img src="img/about.png" alt="">
+    <div class="home-text">
+        <h1>About Me</h1>
+        <h3>My journey started with a curiosity for problem-solving, and it has led me to become proficient in HTML, CSS, JavaScript, and more. </h3>
+        <a href="#">Download CV</a>
+    </div>
+        
+</section>
+<section class="contact-container" id="contact">
+    <h1>Contact Us</h1>
+    <img src="img/contact.png" alt="">
+    <form action="">
+        <div class="half">
+          <div class="item">
+            <label for="name">NAME</label>
+            <input type="text" id = "name">
+          </div>
+          <div class="item">
+            <label for="email">EMAIL</label>
+            <input type="text" id = "email">
+          </div>
+        </div>
+        <div class="full">
+          <label for="message">MESSAGE</label>
+          <textarea name="" id = "message"></textarea>
+        </div>
+        <div class="action">
+          <input type="submit" value = "SEND MESSAGE">
+        </div>
+      </form>
+</section>
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="img/xem.png" alt="" />
+      <p>Unlock Your Luck with RaffleXpress</p>
+    </div>
+    <div class="col">
+      <h3>Office</h3>
+      <p>5th Road</p>
+      <p>Wai Pon La, Yangon</p>
+      <p class="email-id">phyominkhant@gmail.com</p>
+      <h4>+95 - 912345678</h4>
+    </div>
+    <div class="col">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Policy</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter</h3>
+      <form>
+        <i class="bx bx-envelope"></i>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit"><i class="bx bx-right-arrow-alt"></i></button>
+      </form>
+      <div class="social-icons">
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <p class="copyright">Xem © 2023 - All Right Reserved</p>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>
