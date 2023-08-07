@@ -59,6 +59,7 @@ header img{
 	display: none;
 }
 .home-container, .about-container{
+	height: fit-content;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -80,6 +81,9 @@ header img{
 	margin: 40px 0;
 }
 .home-text a{
+	color: var(--main-color);
+}
+.home-text .btn{
 	color: var(--text-color);
 	background-color: var(--main-color);
 	font-size: 1rem;
@@ -88,29 +92,42 @@ header img{
 	border-radius: 5px;
 	transition: ease all 0.3s;
 }
-.home-text a:hover{
+.home-text .btn:hover{
 	color: var(--main-color);
 	background-color: var(--text-color);
 }
-.home-container img, .about-container img{
+.home-container img, .about-container img, .portfolio-container .skill img, .portfolio-container .skill iframe{
 	width: 50%;
 }
-.contact-container{
+.portfolio-container .skill iframe{
+	padding: 0 50px 0 0;
+}
+.portfolio-container h1{
+	font-size: 2.8rem;
+	margin: 100px 0 50px 0;
+	color: var(--text-color);
+}
+.portfolio-container .skill{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 50px 0;
+	
+}
+.contact-container, .portfolio-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 20px 15%;
-	margin: 30px 0 0 0;
-	
 }
 .contact-container h1{
 	font-size: 2.8rem;
-	margin: 50px;
+	margin: 100px 0 50px 0;
 	color: var(--text-color);
 }
 .contact-container img{
-	width: 80%;
+	width: 75%;
 }
 .contact-container form{
 	width: 650px;
@@ -164,7 +181,7 @@ header img{
 	outline: 0;
 	padding: 12px 16px;
 	width: 100%;
-	height: 200px;
+	height: 180px;
 	font-size: 17px;
   }
   
@@ -296,9 +313,10 @@ header img{
 	header{
 		padding: 15px 10%;
 	}
-	.home-container, .about-container{
-		padding: 15px 10%;
+	.home-container .about-container{
+		padding: 20px 10%;
 	}
+	
 	.home-text h1{
 		font-size: 2.5rem;
 	}
@@ -308,9 +326,31 @@ header img{
 	.home-text h3{
 		font-size: 1.5rem;
 	}
-	.home-text a{
+	.home-text .btn{
 		font-size: 0.9rem;
 		padding: 8px 20px;
+	}
+	.contact-container, .portfolio-container{
+		padding: 15px 10%;
+	}
+	.portfolio-container .skill{
+		margin: 20px 0;
+	}
+	.portfolio-container #skill3{
+		flex-direction: column-reverse;
+	}
+	.portfolio-container .skill iframe{
+		width: 100%;
+		padding: 0;
+	}
+	.portfolio-container #skill3 .home-text{
+		width: 100%;
+	}
+	.contact-container h1{
+		margin-top: 0;
+	}
+	.contact-container img{
+		width: 100%;
 	}
 	footer .row .col:nth-child(2),
   .col:nth-child(3) {
@@ -357,9 +397,26 @@ header img{
 	.navlist.active{
 		top: 100%;
 	}
+	#skill2{
+		flex-direction: column;
+	}
 	.home-container, .about-container{
 		flex-direction: column;
+		height: fit-content;
 		margin: 20px 0;
+		justify-content: flex-start;
+		padding: 25px 10%;
+	}
+	.contact-container .portfolio-container{
+		height: fit-content;
+	}
+	.portfolio-container .skill{
+		flex-direction: column-reverse;
+		margin: 0;
+		height: fit-content;
+	}
+	.portfolio-container .skill iframe{
+		width: 100%;
 	}
 	
 	.home-text{		
@@ -374,11 +431,11 @@ header img{
 	.home-text h3{
 		font-size: 1.5rem;
 	}
-	.home-text a{
+	.home-text .btn{
 		font-size: 0.9rem;
 		padding: 8px 20px;
 	}
-	.home-container img, .about-container img{
+	.home-container img, .about-container img, .portfolio-container .skill img{
 		width: 80%;
 		margin-top: 25px;
 	}
@@ -417,6 +474,10 @@ header img{
 	.navlist a{
 		font-size: 0.9rem;
 	}
+	.home-container img, .about-container img, .portfolio-container .skill img{
+		width: 100%;
+		margin-top: 0px;
+	}
 	.home-text h1{
 		font-size: 2rem;
 	}
@@ -426,7 +487,7 @@ header img{
 	.home-text h3{
 		font-size: 1.3rem;
 	}
-	.home-text a{
+	.home-text .btn{
 		font-size: 0.9rem;
 		padding: 7px 18px;
 	}
